@@ -44,6 +44,7 @@ const EMOJI_MAP: Record<Theme["pattern"], string[]> = {
   spark: ["✨", "💫"],
   orbit: ["✨", "🌌"],
   sagejayanti: ["🕯️", "📿"],
+  party: ["🎉", "🎈", "🎂", "🎊", "⭐"],
 };
 
 export default function Decor({ theme, seed }: DecorProps) {

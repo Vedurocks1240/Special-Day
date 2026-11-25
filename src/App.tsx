@@ -121,6 +121,21 @@ export default function App() {
                 {today.title}
               </h1>
               {today.subtitle && <p className="subtitle">{today.subtitle}</p>}
+              {today.link && (
+                <a
+                  className="invite-btn"
+                  href={today.link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    background: `linear-gradient(90deg, ${theme.accent}, ${theme.accent2})`,
+                    color: theme.textOnAccent,
+                    boxShadow: `0 0 28px ${theme.glow}66`,
+                  }}
+                >
+                  🎟️ {today.link.label}
+                </a>
+              )}
               <span className="theme-pill" style={{ background: theme.accent, color: theme.textOnAccent }}>
                 {theme.name}
               </span>

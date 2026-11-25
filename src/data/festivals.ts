@@ -15,6 +15,7 @@ export type ThemeKey =
   | "modern"
   | "solstice"
   | "jayanti"
+  | "birthday"
   | "default";
 
 export interface SpecialDay {
@@ -22,6 +23,7 @@ export interface SpecialDay {
   title: string;
   subtitle?: string;
   theme: ThemeKey;
+  link?: { url: string; label: string };
 }
 
 // Comprehensive list of Indian festivals, national holidays, jayantis and
@@ -54,6 +56,7 @@ export const specialDays: SpecialDay[] = [
   { date: "2026-11-14", title: "Children's Day", subtitle: "Birth anniversary of Pandit Jawaharlal Nehru", theme: "modern" },
   { date: "2026-11-15", title: "Chhath Puja", subtitle: "Worship of the Sun God", theme: "diwali" },
   { date: "2026-11-24", title: "Guru Nanak Jayanti", subtitle: "Birth anniversary of the founder of Sikhism", theme: "sikh" },
+  { date: "2026-11-26", title: "Vedu Rocks Day", subtitle: "Birthday of greatest person ever Vedansh Jain", theme: "birthday", link: { url: "https://vedu-birthday-eight.vercel.app/", label: "Open the invite" } },
   { date: "2026-12-01", title: "World AIDS Day", subtitle: "Global solidarity in the fight against HIV/AIDS", theme: "modern" },
   { date: "2026-12-22", title: "Winter Solstice", subtitle: "The shortest day of the year", theme: "solstice" },
   { date: "2026-12-25", title: "Christmas", subtitle: "Celebrating the birth of Jesus Christ", theme: "christmas" },
@@ -124,6 +127,7 @@ export const specialDays: SpecialDay[] = [
   { date: "2027-11-04", title: "Chhath Puja", subtitle: "Worship of the Sun God", theme: "diwali" },
   { date: "2027-11-14", title: "Guru Nanak Jayanti", subtitle: "Birth anniversary of the founder of Sikhism", theme: "sikh" },
   { date: "2027-11-14", title: "Children's Day", subtitle: "Birth anniversary of Pandit Jawaharlal Nehru", theme: "modern" },
+  { date: "2027-11-26", title: "Vedu Rocks Day", subtitle: "Birthday of greatest person ever Vedansh Jain", theme: "birthday" },
   { date: "2027-12-01", title: "World AIDS Day", subtitle: "Global solidarity in the fight against HIV/AIDS", theme: "modern" },
   { date: "2027-12-22", title: "Winter Solstice", subtitle: "The shortest day of the year", theme: "solstice" },
   { date: "2027-12-25", title: "Christmas", subtitle: "Celebrating the birth of Jesus Christ", theme: "christmas" },

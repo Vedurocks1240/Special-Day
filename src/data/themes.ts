@@ -10,7 +10,7 @@ export interface Theme {
   glow: string;
   textOnAccent: string;
   emoji: string;
-  pattern: "diyas" | "colorSplash" | "tricolor" | "snow" | "crescent" | "pookalam" | "modak" | "garba" | "thread" | "peacock" | "khanda" | "trishul" | "bud" | "spark" | "orbit" | "sagejayanti";
+  pattern: "diyas" | "colorSplash" | "tricolor" | "snow" | "crescent" | "pookalam" | "modak" | "garba" | "thread" | "peacock" | "khanda" | "trishul" | "bud" | "spark" | "orbit" | "sagejayanti" | "party";
 }
 
 export const themes: Record<ThemeKey, Theme> = {
@@ -205,6 +205,18 @@ export const themes: Record<ThemeKey, Theme> = {
     textOnAccent: "#150c02",
     emoji: "🕯️",
     pattern: "sagejayanti",
+  },
+  birthday: {
+    name: "Birthday Bash",
+    bgFrom: "#000000",
+    bgVia: "#06201a",
+    bgTo: "#00060a",
+    accent: "#ff8a1f",
+    accent2: "#2d9cff",
+    glow: "#22e58f",
+    textOnAccent: "#000000",
+    emoji: "🎂",
+    pattern: "party",
   },
   default: {
     name: "Cosmic Night",
